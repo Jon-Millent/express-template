@@ -1,2 +1,2 @@
-# template
-一些项目初始化模板
+# express-template
+express项目初始化模板
