@@ -1,0 +1,1 @@
+module.exports = {  db: {    port: 3306,    username: 'root',    password: 'root',    database: 'movie',    host: '127.0.0.1',    runRenderDatabaseModel: 'sequelize-auto -h localhost -p 3306 -d movie -u root -x root'  },  corsOptions: {    // origin: ''  }}

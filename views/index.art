@@ -1,0 +1,5 @@
+{{ extend './template/layout' }}
+
+{{block 'content'}}
+    <h1>hello</h1>
+{{/block}}

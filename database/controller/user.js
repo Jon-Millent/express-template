@@ -1,0 +1,1 @@
+let models = require('../models')let db = require('../db')let DataTypes = require('sequelize');let userModel = models.user(db.sequelize, DataTypes)module.exports = {  getUserInfo(value){    return userModel.findOne({      where: {        username: value.username      }    })  }}
