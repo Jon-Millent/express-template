@@ -6,6 +6,8 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var session = require('express-session');
 var router = require('./routers');
+var cors = require('cors')
+var config = require('./config')
 var app = express();
 
 const key = 'j48g47f47ddf4fd47as4sad47dfg7wthl1'
@@ -35,6 +37,8 @@ app.use(session({
 
 app.use(express.static(path.join(__dirname, 'public')));
 app.disable('x-powered-by');
+
+app.use(cors(config.corsOptions))
 
 router(app); //设置路由
 
